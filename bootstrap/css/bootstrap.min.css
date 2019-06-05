@@ -242,7 +242,7 @@ th {
 
     a,
     a:visited {
-        text-decoration: underline
+        text-decoration: underline;
     }
 
     a[href]:after {
@@ -280,6 +280,7 @@ th {
     h2,
     h3,
     p {
+
         orphans: 3;
         widows: 3
     }

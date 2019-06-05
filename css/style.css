@@ -140,7 +140,7 @@ body.section-animate .section.active{
 	padding-top:0;
 }
 .section-block{
-	padding-top:80px;
+	padding-top:10px;
 }
 .col-img{
 	position:fixed;
@@ -380,7 +380,7 @@ body.show-menu .menu-items > li > a{
 	Intro Section
 ==============================================================*/
 .intro-section {
-    padding-top: 150px;
+    padding-top: 20px;
     padding-right: 270px;
 }
 .intro-section:after{
@@ -402,8 +402,8 @@ body.show-menu .menu-items > li > a{
 }
 .intro-text > h1{
 	color:#000;	
-	font-size:64px;
-	font-weight:700;
+	font-size:28px;
+	font-weight:400;
 	margin:0;
 }
 .intro-text > p{
@@ -467,15 +467,15 @@ body.show-menu .menu-items > li > a{
 .about-text > h2{
 	color: black;
 	margin:0;
-	font-weight:700;
+	font-weight:400;
 	letter-spacing:1px;
 	line-height:1em;
 	font-size:40px;
 }
 .about-text > p{
 	color: black;
-	margin-top:25px;
-	margin-bottom:0;
+	margin-top:10px;
+	margin-bottom:10px;
 	font-size:18px;
 	line-height:1.5em;
 	color:#000000;
@@ -1110,10 +1110,10 @@ textarea.form-control{
 	Single Post Page
 ==============================================================*/
 .single-post > h1{
-	font-size:38px;
+	font-size:28px;
 	margin-top:0;
-	font-weight:700;
-	line-height:1.4em;
+	font-weight:400;
+	line-height:1.1em;
 }
 .single-post > em{
 	font-style:normal;
@@ -1366,7 +1366,7 @@ textarea.form-control{
 }
 @media(max-width:340px){
 	.intro-text > h1{
-		font-size:60px;
+		font-size:28px;
 	}
 }
 @media(max-width:1300px) and (min-width:992px){
