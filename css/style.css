@@ -324,7 +324,7 @@ body.show-menu #menu{
 	transition:transform .3s ease;
 }
 .menu-items > li > a:hover{
-	color:rgba(234, 0, 255, 0.5);
+	color: #000000;
 	text-decoration:underline;
 
 }
