@@ -116,7 +116,7 @@ a.btn-custom{
 	width:12px;
 }
 .sections::-webkit-scrollbar-thumb{
-	background:#808080;
+	background:#fff;
 	border:solid 3px #FFF;
 }
 .sections::-webkit-scrollbar-thumb:hover{
@@ -164,25 +164,23 @@ body.section-animate .section.active{
 #preloader{
 	position:fixed;
 	top:0;
-	left:0;
+	left:-20;
+	right:0;
 	z-index:999;
 	background:#FFF;
 	height:100%;
 	width:100%;
-	margin:0 auto;
 	-webkit-transition:all .5s .5s ease;
 	-moz-transition:all .5s .5s ease;
 	transition:all .5s .2s ease;
 }
 .loader{
 	position:absolute;
-	top:30%;
-	left:0;
-	right:0;
-	width:150px;
-	height:150px;
-	display:block;
-	margin:0 auto;
+	top:40%;
+	left:45%;
+	right:30%;
+	height:100%;
+	width:100%;
 }
 body.loaded #preloader{
 	opacity:0;
@@ -206,10 +204,12 @@ body.loaded #preloader{
 	height:3px;
 	width:100%;
 	position:absolute;
-	background:#000000;
+	background:#ff0000;
 }
 .menu-btn > .l2{
-	margin:7px 0;
+	margin:10px 0;
+	margin-bottom:10px;
+
 }
 /* Menu icon styles */
 .menu-icon-wrapper {
@@ -242,11 +242,12 @@ body.loaded #preloader{
 	transform-origin: 0 0;
 }
 .menu-icon-wrapper svg path {
-	stroke: #000000;
+	stroke: #ff0000;
 	stroke-width: 30px;
 	stroke-linecap: square;
     stroke-linejoin: round;
 	fill: transparent;
+	
 }
 .menu-icon-wrapper .menu-icon-trigger {
 	position: relative;
@@ -257,11 +258,11 @@ body.loaded #preloader{
 	background: none;
 	border: none;
 	margin: 0;
-	padding: 0;
+	padding-bottom: 5px;
 }
 .menu-icon-wrapper .menu-icon-trigger:hover,
 .menu-icon-wrapper .menu-icon-trigger:focus {
-	outline: none;
+	outline: outset;
 }
 #menu{
 	font-family: 'Roboto:900', sans-serif;
@@ -283,24 +284,22 @@ body.show-menu #menu{
 	opacity:1;
 }
 .menu-main{
-	display:table;
-	height:100%;
-	width:100%;
-	text-align:right;
+	display: initial;
+    right: 0;
+    height: 50%;
+    width: 50%;
+    position: sticky;
+    text-align: right;
 }
 .menu-items{
-	display:table-cell;
-	vertical-align:middle;
-	list-style:none;
-	margin:10px 10px 10px 10px;
-	padding:10px;
-	margin-bottom: 0px;
+	display: flow-root;
+    list-style: none;
+    margin: 70px 20px 0px 10px;
 }
 .menu-items > li{
-	display:block;
+	display:flow-root;
 	margin-bottom:0px;
 	overflow:visible;
-	line-height:18px;
 }
 .menu-items > li:last-of-type{
 	margin-bottom:0;
@@ -310,8 +309,8 @@ body.show-menu #menu{
 	font-size:36px;
 	letter-spacing:2px;
 	font-weight:600;
-	display:block;
-	color:rgba(234, 0, 255, 0.5);
+	display:flow-root;
+	color:rgb(0, 0, 0);
 	text-decoration:none;
 	text-transform:uppercase;
 	-webkit-transform:translateY(120%);
@@ -381,7 +380,7 @@ body.show-menu .menu-items > li > a{
 ==============================================================*/
 .intro-section {
     padding-top: 20px;
-    padding-right: 270px;
+    padding-right: 250px;
 }
 .intro-section:after{
 	height:0;
@@ -401,7 +400,7 @@ body.show-menu .menu-items > li > a{
 	display:table-cell;
 }
 .intro-text > h1{
-	color:#000;	
+	color:#000000;	
 	font-size:28px;
 	font-weight:400;
 	margin:0;
@@ -427,7 +426,7 @@ body.show-menu .menu-items > li > a{
 	font-family: Roboto;
 	font-weight:900;
 	font-size:18px;
-	color:#00FF7F;
+	color:rgb(255, 255, 0);
 	text-decoration:none;
 	margin-top:4px;
 	display:inline-block;
@@ -479,19 +478,6 @@ body.show-menu .menu-items > li > a{
 	font-size:18px;
 	line-height:1.5em;
 	color:#000000;
-}
-.funfact > h2{
-	margin:0;
-	font-size:63px;
-	letter-spacing:2px;
-	font-weight:700;
-}
-.funfact > p{
-	margin:0;
-	text-transform:uppercase;
-	letter-spacing:2px;
-	color:#000000;
-	margin-top:-5px;
 }
 .services-block{
 	margin-bottom:-40px;
@@ -546,7 +532,7 @@ body.show-menu .menu-items > li > a{
 }
 .p-table{
 	padding:40px;
-	border:solid 2px rgba(0,0,0,.1);
+	border:solid 2px rgb(0, 0, 0);
 	text-align:center;
 	-webkit-transition:border-color .3s ease;
 	-moz-transition:border-color .3s ease;
@@ -830,12 +816,15 @@ body.show-menu .menu-items > li > a{
 	text-transform:uppercase;
 	letter-spacing:2px;
 	font-size:14px;
-	margin-right:25px;
+	margin-right:10px;
 	text-decoration:none;
 }
 .portfolio-filters a.active,
 .portfolio-filters a:hover{
 	color:#000000;
+	text-decoration:underline;
+
+
 }
 /*== Project Popup ==*/
 .mfp-bg{
@@ -965,7 +954,7 @@ body.show-menu .menu-items > li > a{
 }
 .popup-box > .content > p{
 	font-size:14px;
-	color:rgba(0,0,0,.45);
+	color:rgba(0,0,0);
 	font-weight:500;
 	line-height:1.7em;
 }
@@ -996,247 +985,6 @@ a.link:hover,
 	box-shadow:0 -7px 0 0 #000000 inset;
 }
 
-/*==============================================================
-	Blog Section
-==============================================================*/
-.blog-posts{
-	list-style:none;
-	margin:0;
-	padding:0;
-}
-.blog-posts > li{
-	width:50%;
-}
-.blog-post{
-	margin-bottom:30px;
-}
-.blog-posts > li:last-of-type > .blog-post{
-	margin-bottom:0;
-}
-.blog-post h4{
-	text-transform:uppercase;
-	letter-spacing:2px;
-	font-weight:600;
-	margin-top:10px;
-	margin-bottom:4px;
-}
-.post-icons{
-	margin:0;
-	padding:0;
-	font-size:0;
-	list-style:none;
-}
-.post-icons > li{
-	display:inline-block;
-	*display:inline;
-	*zoom:1;
-	margin-right:15px;
-}
-.post-icons > li > *{
-	font-size:14px;
-	color:lime;
-}
-.post-icons > li > i{
-	margin-right:7px;
-}
-.blog-post p{
-	margin-top:10px;
-	line-height:1.7em;
-	color:#000000;
-}
-
-/*==============================================================
-	Contact Section
-==============================================================*/
-.contact-info{
-	position:relative;
-	margin-top:20px;
-}
-.contact-info > i{
-	font-size:54px;
-	line-height:1em;
-	vertical-align:middle;
-}
-.contact-info > p{
-	font-size:16px;
-	color:lime;
-	color:#000000;
-	line-height:1.6em;
-	margin-top:5px;
-	margin-bottom:0;
-}
-.contact-form{
-	position:relative;
-	margin-top:55px;
-}
-.contact-form .form-group{
-	margin-bottom:20px;
-}
-.form-control{
-	padding:12px 2px;
-	height:auto;
-	-webkit-box-shadow:none !important;
-	-moz-box-shadow:none !important;
-	box-shadow:none !important;
-	border:none;
-	border-bottom:solid 2px lime;
-	border-radius:0;
-}
-textarea.form-control{
-	resize:vertical;
-}
-.form-control:focus{
-	border-color:#000000;
-}
-.submit-btn,
-.send-message{
-	margin-top:10px;
-	text-transform:uppercase;
-	letter-spacing:2px;
-	font-size:14px;
-	padding:0;
-	border:none;
-	line-height:1em;
-	background:transparent;
-	font-weight:700;
-	outline:none !important;
-}
-.alert{
-	border-radius:0;
-	background:transparent !important;
-}
-
-/*==============================================================
-	Single Post Page
-==============================================================*/
-.single-post > h1{
-	font-size:28px;
-	margin-top:0;
-	font-weight:400;
-	line-height:1.1em;
-}
-.single-post > em{
-	font-style:normal;
-	margin-bottom:10px;
-	display:block;
-}
-.single-post > em,
-.single-post > em > a{
-	color:#000000;
-}
-.single-post > .content{
-	margin-top:60px;
-}
-.single-post > .content > .dropcap:first-letter{
-	font-size:48px;
-	margin-right:7px;
-	padding-bottom:3px;
-	line-height:1.1em;
-	float:left;
-	font-weight:700;
-}
-.single-post > .content >p{
-	line-height:1.8em;
-	color:lime;
-	font-size:16px;
-	color:#000000;
-	padding:0 90px;
-	text-align:justify;
-	margin:10px 0;
-}
-.single-post .img-left{
-	float:left;
-	margin:10px;
-	margin-left:-90px;
-	width:75%;
-}
-.single-post .img-right{
-	float:right;
-	margin:10px;
-	margin-right:-90px;
-	width:75%;
-}
-.comments{
-	margin-top:110px;
-}
-.comments .header > h2{
-	text-transform:uppercase;
-	letter-spacing:2px;
-	font-size:22px;
-	font-weight:700;
-	border-bottom:solid 4px #CCC;
-	line-height:.8em;
-	margin:0;
-}
-.comments .header{
-	margin-bottom:40px;
-}
-.comment{
-	position:relative;
-	min-height:110px;
-	border-bottom:solid 1px #F0F0F0;
-}
-.comment > .person-img{
-	height:70px;
-	width:70px;
-	border-radius:50%;
-	top:0;
-	left:0;
-	position:absolute;
-	overflow:hidden;
-}
-.comment > .content{
-	margin-left:90px;
-	margin-top:30px;
-	margin-bottom:30px;
-	position:relative;
-}
-.comment > .content h4{
-	text-transform:uppercase;
-	font-weight:600;
-	letter-spacing:2px;
-	margin-top:0;
-	margin-bottom:3px;
-}
-.comment > .content em{
-	color:#000000;
-}
-.comment > .content p{
-	margin:0;
-	margin-top:10px;
-	line-height:1.6em;
-	color:#000000;
-}
-.comment .reply{
-	text-transform:uppercase;
-	letter-spacing:1px;
-	font-weight:600;
-	position:absolute;
-	right:0;
-	bottom:-10px;
-	color:lime;
-	text-decoration:none;
-}
-.comment .reply:hover{
-	color:#000000;
-}
-.comment > .comment{
-	margin-left:110px;
-}
-.comment:last-of-type{
-	border-bottom:none;
-}
-.add-comment{
-	margin-top:100px;
-}
-.add-comment > h4{
-	letter-spacing:2px;
-	margin-top:0;
-	margin-bottom:35px;
-	font-weight:600;
-	font-size:22px;
-	text-transform:uppercase;
-}
 
 /*==============================================================
 	Responsive CSS
