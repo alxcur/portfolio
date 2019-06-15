@@ -25,6 +25,10 @@
 /*==============================================================
 	General Styles
 ==============================================================*/
+@-ms-viewport{
+	width: device-width;
+  }
+
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Roboto:400,400i,700,900';
 *{
 	font-family:inherit;
@@ -35,7 +39,7 @@ body{
 .menu-items,
 .btn-custom, .hire-me,
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Roboto:900', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 body, html{
 	height:100%;
@@ -402,7 +406,7 @@ body.show-menu .menu-items > li > a{
 .intro-text > h1{
 	color:#000000;	
 	font-size:28px;
-	font-weight:400;
+	font-weight:300;
 	margin:0;
 }
 .intro-text > p{
@@ -466,10 +470,10 @@ body.show-menu .menu-items > li > a{
 .about-text > h2{
 	color: black;
 	margin:0;
-	font-weight:400;
+	font-weight:300;
 	letter-spacing:1px;
-	line-height:1em;
-	font-size:40px;
+	line-height:1.5em;
+	font-size:28px;
 }
 .about-text > p{
 	color: black;
